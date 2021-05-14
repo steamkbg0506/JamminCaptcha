@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jammin Capcha</title>
+    <style>
+        #do1{
+            float:left;
+            border: 2px solid #305DE7;
+            width: 140px;
+            height:100px;
+        }
+        #do2{
+            float:right;
+            border: 2px solid #305DE7;
+            width: 140px;
+            height:100px;
+        }
+        #do3{
+            float:left;
+            border: 2px solid #305DE7;
+            width: 140px;
+            height:100px;
+        }
+        #do4{
+            float:right;
+            border: 2px solid #305DE7;
+            width: 140px;
+            height:100px;
+        }
+        #cluster {
+            background-color: rgb(48, 93, 231);
+            color: white;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <script>
+        function rightFunction(x, y) {
+            alert("정답입니다. 봇이 아님을 검증하기 위해 hCAPCHA 페이지로 넘어갑니다...");
+            location.href="./hcapcha.html";
+        }
+      </script>
+    <div id="main"> 
+        <div id = "cluster">
+            <center>
+            <h3><br></h3>
+        
+                <h1>Jammin Capcha</h1>
+            <h3>
+                맞춤법이 맞는 단어를 포함한 타일을 고르세요.
+            </h3>
+            <input type="button" value="?" onclick="alert('잼민이가 진입하는 것을 막기 위한 CAPCHA 시스템입니다. 위 질문에 답하여 주시기 바랍니다.')">
+            <br>
+            </center>
+        </div>
+
+        <br>
+
+    <div class="do_up" id = "do1">
+        <center>
+            <a href="#"><h4>아 그거 그럿개 하는 거 아닌대</h4></a>
+        </center>
+    </div>
+    <div class="do_up" id = "do2">
+        <center>
+            <a href="#"><h4>아 그거 그렇게 하는 거 아닌대</h4></a>
+        </center>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="do_down" id = "do3">
+        <center>
+            <a href="#" onclick="rightFunction();"><h4>아 그거 그렇게 하는 거 아닌데</h4></a>
+        </center>
+    </div>
+    <div class="do_down" id = "do4">
+        <center>
+            <a href="#"><h4>아 그거 그럿게 하는 거 아닌대</h4></a>
+        </center>
+
+    </div>
+    </div>
+</body>
+</html>
